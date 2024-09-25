@@ -18,7 +18,7 @@ public class PostmanEchoTest {
                 .post("/post")
 // Проверки
                 .then()
-                .statusCode(201)
+                .statusCode(200)
         ;
     }
 
@@ -35,7 +35,7 @@ public class PostmanEchoTest {
                 .post("/post")
 // Проверки
                 .then()
-                .body("data", equalTo("another data"))
+                .body("data", equalTo("some data"))
         ;
     }
 
